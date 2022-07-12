@@ -1,7 +1,7 @@
 <!-- <h1>Create an article</h1>
 
 
-<%= form_for :article, url: articles_path, local: true do |f|%>
+<%=form_for @article do |f|%>
 
 <p>
 	<%= f.label :title%><br/>
@@ -25,6 +25,6 @@
 <%end%>
  -->
 
- <h1>Create an article</h1>
+ <h1>edit article</h1>
 <%= render 'form'%>
 <%= link_to 'Return to article', articles_path %>

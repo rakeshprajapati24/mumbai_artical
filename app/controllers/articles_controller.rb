@@ -18,6 +18,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    # binding.pry
     @article = Article.new(params_article)
     if @article.save
       flash[:notice] = "Article was created successfully"
@@ -28,6 +29,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
+   # binding.pry
     @article = Article.find(params[:id])
     @article.update_attributes(params_article)
     if @article.save
